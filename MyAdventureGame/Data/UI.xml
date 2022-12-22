@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<UI>
+	<Group>
+		<Image visible ="true" x ="0" y="0" width ="160" height="16" justify ="right" vjustify ="top" path ="Data/GreenBar.png" h_bar ="Player">
+			<Anchor x="1" y="0"/>
+		</Image>
+
+		<Image visible="true" x ="0" y="0" width ="160" height="16" justify ="left" vjustify ="top" path ="Data/GreenBar.png" h_bar ="Skel" h_bar_id="1" safe_display ="False">
+			<Anchor x="0" y="0"/>
+		</Image>
+
+		<Image visible="true" x ="0" y="16" width ="160" height="16" justify ="left" vjustify ="top" path ="Data/GreenBar.png" h_bar ="Skel" h_bar_id="2" safe_display ="False">
+			<Anchor x="0" y="0"/>
+		</Image>
+
+		<Button visible ="true" id="startnewButton" x="-120" y="0" width ="100" height="100" justify="center" vjustify="center" path="Data/border.png">
+			<Anchor x="0.5" y="0.5"/>
+			<Font text="New" font="arial" color="black" size="48" justify="center" vjustify="center"/>
+			<Action onClick="StartNewGame" pressed="Data/pressed.png" />
+		</Button>
+
+		<Button visible ="true" id="startoldButton" x="0" y="0" width ="100" height="100" justify="center" vjustify="center" path="Data/border.png">
+			<Anchor x="0.5" y="0.5"/>
+			<Font text="Load" font="arial" color="black" size="48" justify="center" vjustify="center"/>
+			<Action onClick="StartOldGame" pressed="Data/pressed.png" />
+		</Button>
+
+		<Button visible ="true" id="joinButton" x="120" y="0" width ="100" height="100" justify="center" vjustify="center" path="Data/border.png">
+			<Anchor x="0.5" y="0.5"/>
+			<Font text="Join" font="arial" color="black" size="48" justify="center" vjustify="center"/>
+			<Action onClick="JoinGame" pressed="Data/pressed.png" />
+		</Button>
+
+		<Button visible ="true" id="volume-" x="-40" y="110" width ="100" height="100" justify="center" vjustify="center" path="Data/border.png">
+			<Anchor x="0.5" y="0.5"/>
+			<Font text="V-" font="arial" color="black" size="48" justify="center" vjustify="center"/>
+			<Action onClick="Volume-" pressed="Data/pressed.png" />
+		</Button>
+
+		<Button visible ="true" id="volume+" x="40" y="110" width ="100" height="100" justify="center" vjustify="center" path="Data/border.png">
+			<Anchor x="0.5" y="0.5"/>
+			<Font text="V+" font="arial" color="black" size="48" justify="center" vjustify="center"/>
+			<Action onClick="Volume+" pressed="Data/pressed.png" />
+		</Button>
+	</Group>
+</UI>
